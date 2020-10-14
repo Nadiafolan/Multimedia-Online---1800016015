@@ -1,53 +1,100 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>My first Canvas App</title>
-<style type="text/css">
-canvas {
-background-color: #ccc;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(bg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
 }
-;</style>
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: navy;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
 </head>
 <body>
-<canvas width="800px" height="450px" id="canvas"></canvas>
-<script type="text/javascript">
-var c = document.getElementById('canvas');
-var ctx = c.getContext('2d');
 
-//lingkaran
-ctx.beginPath();
-ctx.arc(400, 225, 120, 0, 2 * Math.PI);
-ctx.fillStyle = "#aa0000";
-ctx.fill();
-ctx.stroke();
+<div><p align="center"><font size="18" color="white">MULTIMEDIA ONLINE</font></p></div>
 
-ctx.beginPath();
-ctx.arc(400, 225, 80, 0, 2 * Math.PI);
-ctx.fillStyle = "#dab420";
-ctx.fill();
-ctx.stroke();
-//persegi
-ctx.beginPath();
-ctx.lineWidth = "5";
-ctx.strokeStyle = "white";
-ctx.rect(350, 170, 100, 100);
-ctx.fillStyle = "#6495ed";
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(650, 130);
-ctx.lineTo(650, 320);
-ctx.lineTo(750, 230);
-ctx.closePath();
-ctx.fillStyle = "#aab001";
-ctx.fill();
-ctx.beginPath();
-ctx.moveTo(150, 130);
-ctx.lineTo(150, 320);
-ctx.lineTo(50, 230);
-ctx.closePath();
-ctx.fillStyle = "#aab001";
-ctx.fill();
-</script>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Praktikum 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Praktikum_1_1800016015.html">Praktikum 1</a>
+      <a href="#">Praktikum 2</a>
+      <a href="#">Praktikum 3</a>
+	  <a href="#">Praktikum 4</a>
+	  <a href="#">Praktikum 5</a>
+	  <a href="#">Praktikum 6</a>
+	  <a href="#">Praktikum 7</a>
+    </div>
+  </div> 
+</div>
+
+    <p align="center"><i><b><font size="5"><font color="white">Nama            : Nadia Folandini</font></font></b></i></p>   
+    <p align="center"><i><b><font size ="5"><font color="white">NIM        : 1800016015</font></font></b></i></p>
+
+
 </body>
 </html>
